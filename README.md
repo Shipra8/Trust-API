@@ -22,9 +22,15 @@ The application includes JWT-based authentication, Swagger API documentation, wi
  Build Tool | Maven                       
  Container  | Docker     
 
- # How to Run the application:
+ # How to Run the application locally:
+
+ a. Clone the repo:
+
+ git clone https://github.com/Shipra8/Trust-API.git
+
+ cd Trust-API
  
- a. Docker Setup: App engine needs to run, 
+ b. Docker Setup: App engine needs to run, 
 
  In Command Prompt,
  
@@ -40,12 +46,14 @@ The application includes JWT-based authentication, Swagger API documentation, wi
   mysql:8
 Check the username and password from application.properties
 
- b. Application Run
+ c. Application Run
+ 
  1. mvn clean install
  2. mvn spring-boot:run
 Once the Tomcat server starts,
 
-c. Swagger- API Documentation
+d. Swagger- API Documentation
+
 http://localhost:8080/swagger-ui.html
 
 

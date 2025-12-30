@@ -25,9 +25,13 @@ The application includes JWT-based authentication, Swagger API documentation, wi
  # How to Run the application:
  
  a. Docker Setup: App engine needs to run, 
+
  In Command Prompt,
+ 
  docker --version
+ 
  docker ps
+
  docker run -d \
   --name mysql \
   -e MYSQL_ROOT_PASSWORD=root \

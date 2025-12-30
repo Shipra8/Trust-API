@@ -20,7 +20,30 @@ The application includes JWT-based authentication, Swagger API documentation, wi
  Database   | MySQL                     
  API Docs   | Springdoc OpenAPI (Swagger) 
  Build Tool | Maven                       
- Container  | Docker                     
+ Container  | Docker     
+
+ # How to Run the application:
+ 
+ a. Docker Setup: App engine needs to run, 
+ In Command Prompt,
+ docker --version
+ docker ps
+ docker run -d \
+  --name mysql \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=microlending \
+  -p 3306:3306 \
+  mysql:8
+Check the username and password from application.properties
+
+ b. Application Run
+ 1. mvn clean install
+ 2. mvn spring-boot:run
+Once the Tomcat server starts,
+
+c. Swagger- API Documentation
+http://localhost:8080/swagger-ui.html
+
 
 # API Screenshots
 
